@@ -1,0 +1,6 @@
+DROP DATABASE IF EXISTS andurardb;
+CREATE DATABASE IF NOT EXISTS andurardb;
+
+CREATE USER 'root'@'%' IDENTIFIED BY 'andurar!23';
+GRANT ALL PRIVILEGES ON yourdatabase.* TO 'root'@'%';
+FLUSH PRIVILEGES;
